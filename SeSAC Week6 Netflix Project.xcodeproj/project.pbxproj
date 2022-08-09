@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6AA5A9828A256D700440730 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA5A9728A256D700440730 /* AppDelegate.swift */; };
+		F6AA5A9A28A256D700440730 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA5A9928A256D700440730 /* SceneDelegate.swift */; };
+		F6AA5A9F28A256D700440730 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AA5A9D28A256D700440730 /* Main.storyboard */; };
+		F6AA5AA128A256D800440730 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6AA5AA028A256D800440730 /* Assets.xcassets */; };
+		F6AA5AA428A256D800440730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AA5AA228A256D800440730 /* LaunchScreen.storyboard */; };
+		F6AA5AAF28A2575D00440730 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA5AAE28A2575D00440730 /* MainViewController.swift */; };
+		F6AA5AB328A25F3800440730 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F6AA5AB228A25F3800440730 /* .gitignore */; };
+		F6AA5AB628A25F6900440730 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA5AB528A25F6900440730 /* Model.swift */; };
+		F6AA5AB828A25F7600440730 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA5AB728A25F7600440730 /* APIManager.swift */; };
+		F6AA5ABA28A25F8100440730 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA5AB928A25F8100440730 /* APIKey.swift */; };
+		F6AA5ABC28A2606A00440730 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA5ABB28A2606A00440730 /* MainTableViewCell.swift */; };
+		F6AA5ABF28A2616900440730 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA5ABD28A2616900440730 /* CardCollectionViewCell.swift */; };
+		F6AA5AC028A2616900440730 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6AA5ABE28A2616900440730 /* CardCollectionViewCell.xib */; };
+		F6AA5AC628A264A000440730 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA5AC528A264A000440730 /* CardView.swift */; };
+		F6AA5AC828A264AC00440730 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6AA5AC728A264AC00440730 /* CardView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F6AA5A9428A256D700440730 /* SeSAC Week6 Netflix Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeSAC Week6 Netflix Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6AA5A9728A256D700440730 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6AA5A9928A256D700440730 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F6AA5A9E28A256D700440730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6AA5AA028A256D800440730 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6AA5AA328A256D800440730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6AA5AA528A256D800440730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6AA5AAE28A2575D00440730 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F6AA5AB228A25F3800440730 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F6AA5AB528A25F6900440730 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F6AA5AB728A25F7600440730 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F6AA5AB928A25F8100440730 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		F6AA5ABB28A2606A00440730 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		F6AA5ABD28A2616900440730 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6AA5ABE28A2616900440730 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
+		F6AA5AC528A264A000440730 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F6AA5AC728A264AC00440730 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6AA5A9128A256D700440730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6AA5A8B28A256D700440730 = {
+			isa = PBXGroup;
+			children = (
+				F6AA5AB228A25F3800440730 /* .gitignore */,
+				F6AA5A9628A256D700440730 /* SeSAC Week6 Netflix Project */,
+				F6AA5A9528A256D700440730 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6AA5A9528A256D700440730 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6AA5A9428A256D700440730 /* SeSAC Week6 Netflix Project.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6AA5A9628A256D700440730 /* SeSAC Week6 Netflix Project */ = {
+			isa = PBXGroup;
+			children = (
+				F6AA5AB428A25F5800440730 /* Key */,
+				F6AA5AAC28A256EE00440730 /* Model */,
+				F6AA5AAB28A256E500440730 /* View */,
+				F6AA5AAD28A256F400440730 /* Controllers */,
+				F6AA5AA028A256D800440730 /* Assets.xcassets */,
+				F6AA5AA228A256D800440730 /* LaunchScreen.storyboard */,
+				F6AA5AA528A256D800440730 /* Info.plist */,
+			);
+			path = "SeSAC Week6 Netflix Project";
+			sourceTree = "<group>";
+		};
+		F6AA5AAB28A256E500440730 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6AA5A9D28A256D700440730 /* Main.storyboard */,
+				F6AA5ABB28A2606A00440730 /* MainTableViewCell.swift */,
+				F6AA5AC528A264A000440730 /* CardView.swift */,
+				F6AA5AC728A264AC00440730 /* CardView.xib */,
+				F6AA5ABD28A2616900440730 /* CardCollectionViewCell.swift */,
+				F6AA5ABE28A2616900440730 /* CardCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6AA5AAC28A256EE00440730 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6AA5AB528A25F6900440730 /* Model.swift */,
+				F6AA5AB728A25F7600440730 /* APIManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F6AA5AAD28A256F400440730 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6AA5AAE28A2575D00440730 /* MainViewController.swift */,
+				F6AA5A9728A256D700440730 /* AppDelegate.swift */,
+				F6AA5A9928A256D700440730 /* SceneDelegate.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F6AA5AB428A25F5800440730 /* Key */ = {
+			isa = PBXGroup;
+			children = (
+				F6AA5AB928A25F8100440730 /* APIKey.swift */,
+			);
+			path = Key;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6AA5A9328A256D700440730 /* SeSAC Week6 Netflix Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6AA5AA828A256D800440730 /* Build configuration list for PBXNativeTarget "SeSAC Week6 Netflix Project" */;
+			buildPhases = (
+				F6AA5A9028A256D700440730 /* Sources */,
+				F6AA5A9128A256D700440730 /* Frameworks */,
+				F6AA5A9228A256D700440730 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SeSAC Week6 Netflix Project";
+			productName = "SeSAC Week6 Netflix Project";
+			productReference = F6AA5A9428A256D700440730 /* SeSAC Week6 Netflix Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6AA5A8C28A256D700440730 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					F6AA5A9328A256D700440730 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F6AA5A8F28A256D700440730 /* Build configuration list for PBXProject "SeSAC Week6 Netflix Project" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6AA5A8B28A256D700440730;
+			productRefGroup = F6AA5A9528A256D700440730 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6AA5A9328A256D700440730 /* SeSAC Week6 Netflix Project */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6AA5A9228A256D700440730 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6AA5AB328A25F3800440730 /* .gitignore in Resources */,
+				F6AA5AC028A2616900440730 /* CardCollectionViewCell.xib in Resources */,
+				F6AA5AC828A264AC00440730 /* CardView.xib in Resources */,
+				F6AA5AA428A256D800440730 /* LaunchScreen.storyboard in Resources */,
+				F6AA5AA128A256D800440730 /* Assets.xcassets in Resources */,
+				F6AA5A9F28A256D700440730 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6AA5A9028A256D700440730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6AA5ABF28A2616900440730 /* CardCollectionViewCell.swift in Sources */,
+				F6AA5AC628A264A000440730 /* CardView.swift in Sources */,
+				F6AA5AAF28A2575D00440730 /* MainViewController.swift in Sources */,
+				F6AA5A9828A256D700440730 /* AppDelegate.swift in Sources */,
+				F6AA5AB828A25F7600440730 /* APIManager.swift in Sources */,
+				F6AA5ABC28A2606A00440730 /* MainTableViewCell.swift in Sources */,
+				F6AA5A9A28A256D700440730 /* SceneDelegate.swift in Sources */,
+				F6AA5ABA28A25F8100440730 /* APIKey.swift in Sources */,
+				F6AA5AB628A25F6900440730 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F6AA5A9D28A256D700440730 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6AA5A9E28A256D700440730 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6AA5AA228A256D800440730 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6AA5AA328A256D800440730 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6AA5AA628A256D800440730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6AA5AA728A256D800440730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6AA5AA928A256D800440730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJNF7APGSX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SeSAC Week6 Netflix Project/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rOarMJ.SeSAC-Week6-Netflix-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F6AA5AAA28A256D800440730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJNF7APGSX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SeSAC Week6 Netflix Project/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rOarMJ.SeSAC-Week6-Netflix-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6AA5A8F28A256D700440730 /* Build configuration list for PBXProject "SeSAC Week6 Netflix Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6AA5AA628A256D800440730 /* Debug */,
+				F6AA5AA728A256D800440730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6AA5AA828A256D800440730 /* Build configuration list for PBXNativeTarget "SeSAC Week6 Netflix Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6AA5AA928A256D800440730 /* Debug */,
+				F6AA5AAA28A256D800440730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6AA5A8C28A256D700440730 /* Project object */;
+}

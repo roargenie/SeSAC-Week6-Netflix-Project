@@ -3,11 +3,11 @@ import UIKit
 
 struct MoviePopular: Codable {
     var adult: Bool
-    var backdrop_path: String
+    var backdrop_path: String?
     var id: Int
     var title: String
     var overview: String
-    var poster_path: String
+    var poster_path: String?
     var genre_ids: [Int]
     var release_date: String
 }
@@ -25,13 +25,13 @@ struct MovieUpcoming: Codable {
     var id: Int
     var title: String
     var overview: String
-    var poster_path: String
+    var poster_path: String?
     var genre_ids: [Int]
     var release_date: String
 }
 
 struct MovieUpcomingList: Codable {
-    var dates: String
+    //var dates: String
     var page: Int
     var results: [MovieUpcoming]
     var total_pages: Int
@@ -43,8 +43,8 @@ struct MovieRecommendation: Codable {
     var id: Int
     var title: String
     var overview: String
-    var poster_path: String
-    var backdrop_path: String
+    var poster_path: String?
+    var backdrop_path: String?
     var genre_ids: [Int]
 }
 
@@ -58,11 +58,11 @@ struct MovieRecommendationList: Codable {
 struct TVPopular: Codable {
     var id: Int
     var name: String
-    var backdrop_path: String
+    var backdrop_path: String?
     var first_air_date: String
     var genre_ids: [Int]
     var overview: String
-    var poster_path: String
+    var poster_path: String?
 }
 
 struct TVPopularList: Codable {
@@ -73,13 +73,13 @@ struct TVPopularList: Codable {
 }
 
 struct TVOnScreen: Codable {
-    var backdrop_path: String
+    var backdrop_path: String?
     var first_air_date: String
     var genre_ids: [Int]
     var id: Int
     var name: String
     var overview: String
-    var poster_path: String
+    var poster_path: String?
 }
 
 struct TVOnScreenList: Codable {
@@ -94,8 +94,8 @@ struct TVRecommendation: Codable {
     var id: Int
     var name: String
     var overview: String
-    var poster_path: String
-    var backdrop_path: String
+    var poster_path: String?
+    var backdrop_path: String?
     var genre_ids: [Int]
 }
 

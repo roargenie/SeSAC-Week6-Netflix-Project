@@ -25,9 +25,10 @@ class MovieAPIManager {
     typealias tvGenreCompletionHandler = ([Int: String]) -> Void
     typealias tvCastCompletionHandler = ([TVCast], [TVCrew]) -> Void
     
+    let imageURL = "https://image.tmdb.org/t/p/w500"
     
     func getMoviePopular(start: Int, completionHandler: @escaping moviePopularCompletionHandler) {
-        
+        print(#function)
         let url = "\(EndPoint.movie.requestURL)" + "popular?api_key=\(APIKey.TMDB)&language=ko-KR&page=1"
         
         AF.request(url, method: .get).validate().responseDecodable(of: MoviePopularList.self, queue: .global()) { response in
@@ -45,7 +46,7 @@ class MovieAPIManager {
     }
     
     func getMovieUpcoming(start: Int, completionHandler: @escaping movieUpcomingCompletionHandler) {
-        
+        print(#function)
         let url = "\(EndPoint.movie.requestURL)" + "upcoming?api_key=\(APIKey.TMDB)&language=ko-KR&page=1"
         
         AF.request(url, method: .get).validate().responseDecodable(of: MovieUpcomingList.self, queue: .global()) { response in

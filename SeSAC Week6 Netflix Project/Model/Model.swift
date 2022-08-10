@@ -48,6 +48,13 @@ struct MovieRecommendation: Codable {
     var genre_ids: [Int]
 }
 
+struct MovieRecommendationList: Codable {
+    var page: Int
+    var results: [MovieRecommendation]
+    var total_pages: Int
+    var total_results: Int
+}
+
 struct TVPopular: Codable {
     var id: Int
     var name: String
@@ -82,6 +89,23 @@ struct TVOnScreenList: Codable {
     var total_results: Int
 }
 
+struct TVRecommendation: Codable {
+    var adult: Bool
+    var id: Int
+    var name: String
+    var overview: String
+    var poster_path: String
+    var backdrop_path: String
+    var genre_ids: [Int]
+}
+
+struct TVRecommendationList: Codable {
+    var page: Int
+    var results: [TVRecommendation]
+    var total_pages: Int
+    var total_results: Int
+}
+
 struct MovieCast: Codable {
     var name: String
     var character: String
@@ -100,3 +124,20 @@ struct MovieCastList: Codable {
     var crew: [MovieCrew]
 }
 
+struct TVCast: Codable {
+    var name: String
+    var character: String
+    var profile_path: String?
+}
+
+struct TVCrew: Codable {
+    var name: String
+    var job: String
+    var profile_path: String?
+}
+
+struct TVCastList: Codable {
+    var id: Int
+    var cast: [TVCast]
+    var crew: [TVCrew]
+}

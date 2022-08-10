@@ -17,7 +17,4 @@ class CardView: UIView {
         self.addSubview(view)
     }
     
-    
-    
-    
 }

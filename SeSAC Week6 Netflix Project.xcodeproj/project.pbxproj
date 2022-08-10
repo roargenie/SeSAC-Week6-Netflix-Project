@@ -22,6 +22,11 @@
 		F6AA5AC028A2616900440730 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6AA5ABE28A2616900440730 /* CardCollectionViewCell.xib */; };
 		F6AA5AC628A264A000440730 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA5AC528A264A000440730 /* CardView.swift */; };
 		F6AA5AC828A264AC00440730 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6AA5AC728A264AC00440730 /* CardView.xib */; };
+		F6AA5ACF28A3A7B700440730 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA5ACE28A3A7B700440730 /* DetailViewController.swift */; };
+		F6AA5AD228A3B23600440730 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = F6AA5AD128A3B23600440730 /* SwiftyJSON */; };
+		F6AA5AD528A3B24000440730 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F6AA5AD428A3B24000440730 /* Alamofire */; };
+		F6AA5AD828A3B24B00440730 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F6AA5AD728A3B24B00440730 /* Kingfisher */; };
+		F6AA5ADC28A3CD7C00440730 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA5ADB28A3CD7C00440730 /* EndPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,8 @@
 		F6AA5ABE28A2616900440730 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
 		F6AA5AC528A264A000440730 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F6AA5AC728A264AC00440730 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		F6AA5ACE28A3A7B700440730 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F6AA5ADB28A3CD7C00440730 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6AA5AD828A3B24B00440730 /* Kingfisher in Frameworks */,
+				F6AA5AD228A3B23600440730 /* SwiftyJSON in Frameworks */,
+				F6AA5AD528A3B24000440730 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +114,7 @@
 			children = (
 				F6AA5AB528A25F6900440730 /* Model.swift */,
 				F6AA5AB728A25F7600440730 /* APIManager.swift */,
+				F6AA5ADB28A3CD7C00440730 /* EndPoint.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				F6AA5AAE28A2575D00440730 /* MainViewController.swift */,
+				F6AA5ACE28A3A7B700440730 /* DetailViewController.swift */,
 				F6AA5A9728A256D700440730 /* AppDelegate.swift */,
 				F6AA5A9928A256D700440730 /* SceneDelegate.swift */,
 			);
@@ -142,6 +154,11 @@
 			dependencies = (
 			);
 			name = "SeSAC Week6 Netflix Project";
+			packageProductDependencies = (
+				F6AA5AD128A3B23600440730 /* SwiftyJSON */,
+				F6AA5AD428A3B24000440730 /* Alamofire */,
+				F6AA5AD728A3B24B00440730 /* Kingfisher */,
+			);
 			productName = "SeSAC Week6 Netflix Project";
 			productReference = F6AA5A9428A256D700440730 /* SeSAC Week6 Netflix Project.app */;
 			productType = "com.apple.product-type.application";
@@ -170,6 +187,11 @@
 				Base,
 			);
 			mainGroup = F6AA5A8B28A256D700440730;
+			packageReferences = (
+				F6AA5AD028A3B23600440730 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				F6AA5AD328A3B24000440730 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F6AA5AD628A3B24B00440730 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = F6AA5A9528A256D700440730 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -204,9 +226,11 @@
 				F6AA5AC628A264A000440730 /* CardView.swift in Sources */,
 				F6AA5AAF28A2575D00440730 /* MainViewController.swift in Sources */,
 				F6AA5A9828A256D700440730 /* AppDelegate.swift in Sources */,
+				F6AA5ADC28A3CD7C00440730 /* EndPoint.swift in Sources */,
 				F6AA5AB828A25F7600440730 /* APIManager.swift in Sources */,
 				F6AA5ABC28A2606A00440730 /* MainTableViewCell.swift in Sources */,
 				F6AA5A9A28A256D700440730 /* SceneDelegate.swift in Sources */,
+				F6AA5ACF28A3A7B700440730 /* DetailViewController.swift in Sources */,
 				F6AA5ABA28A25F8100440730 /* APIKey.swift in Sources */,
 				F6AA5AB628A25F6900440730 /* Model.swift in Sources */,
 			);
@@ -430,6 +454,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6AA5AD028A3B23600440730 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F6AA5AD328A3B24000440730 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F6AA5AD628A3B24B00440730 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6AA5AD128A3B23600440730 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6AA5AD028A3B23600440730 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		F6AA5AD428A3B24000440730 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6AA5AD328A3B24000440730 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F6AA5AD728A3B24B00440730 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6AA5AD628A3B24B00440730 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6AA5A8C28A256D700440730 /* Project object */;
 }

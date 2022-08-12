@@ -22,9 +22,9 @@ class CardCollectionViewCell: UICollectionViewCell {
     }
     
     func setupUI() {
-        cardView.backgroundColor = .clear
-        cardView.posterImageView.backgroundColor = .yellow
-        
+        //cardView.backgroundColor = .black
+        //cardView.posterImageView.backgroundColor = .yellow
+        cardView.posterImageView.layer.cornerRadius = 15
         
     }
     

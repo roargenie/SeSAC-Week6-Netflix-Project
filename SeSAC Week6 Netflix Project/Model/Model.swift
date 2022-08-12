@@ -21,7 +21,7 @@ struct MoviePopularList: Codable {
 
 struct MovieUpcoming: Codable {
     var adult: Bool
-    var backdrop_path: String
+    var backdrop_path: String?
     var id: Int
     var title: String
     var overview: String

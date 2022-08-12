@@ -40,13 +40,7 @@ class MainViewController: UIViewController {
         mainTableView.delegate = self
         mainTableView.dataSource = self
         //cell.contentCollectionView.prefetchDataSource = self
-        //setHeaderUI()
         
-//        getUpcomingMovie()
-//        getRecommendMovie()
-//        getPopularTV()
-//        getOnScreenTV()
-//        getRecommendTV()
         getPopularMovie()
         getMovieGenre()
         getTVGenre()
@@ -63,7 +57,7 @@ class MainViewController: UIViewController {
             self.getPopularTV()
             self.getOnScreenTV()
             self.getRecommendTV()
-            
+            self.setHeaderUI()
             DispatchQueue.main.async {
                 self.mainTableView.reloadData()
             }
@@ -76,7 +70,7 @@ class MainViewController: UIViewController {
         MovieAPIManager.shared.getMovieUpcoming(start: startAndTotalCount["MovieUpcoming"]!.0) { totalCount, result in
             self.startAndTotalCount["MovieUpcoming"]!.1 = totalCount
             self.movieUpcomingData.append(contentsOf: result)
-            //dump(self.movieUpcomingData)
+            dump(self.movieUpcomingData)
         }
         
     }
@@ -133,31 +127,95 @@ class MainViewController: UIViewController {
         }
     }
     
-//    func setHeaderUI() {
-//        let url = URL(string: "\(MovieAPIManager.shared.imageURL)\(movieDatas?.poster_path)")
-//        headerImageView.kf.setImage(with: url)
+    func setHeaderUI() {
+        if let randomdata = moviePopularData.randomElement() {
+//            var genreString: [String] = []
+//            for id in randomdata.genre_ids {
+//                if movieGenreDic.keys.contains(id) {
+//                    if let genre = movieGenreDic[id] {
+//                        genreString.append(genre)
 //
-//    }
-    
+//                        DispatchQueue.main.async {
+//
+//                        }
+//                    }
+//                }
+//            }
+            if let url = randomdata.poster_path {
+                let image = URL(string: "\(MovieAPIManager.shared.imageURL)\(url)")
+                
+                DispatchQueue.main.async {
+                    self.headerImageView.kf.setImage(with: image)
+                    self.headerImageView.contentMode = .scaleToFill
+                    
+                }
+            }
+            
+        }
+    }
     
 }
 
 extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView.tag == 0 {
+            return moviePopularData.count
+        } else if collectionView.tag == 1 {
+            return movieUpcomingData.count
+        } else if collectionView.tag == 2 {
+            return tvPopularData.count
+        } else if collectionView.tag == 3 {
+            return tvOnScreenData.count
+        } else {
+            return 0
+        }
         
-        
-        
-        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardCollectionViewCell.identifier, for: indexPath) as? CardCollectionViewCell else { return UICollectionViewCell() }
         
-        
-        cell.cardView.posterImageView.backgroundColor = .systemPink
+        if collectionView.tag == 0 {
+            let data = moviePopularData[indexPath.item]
+            if let url = data.poster_path {
+                let image = URL(string: "\(MovieAPIManager.shared.imageURL)\(url)")
+                cell.cardView.posterImageView.kf.setImage(with: image)
+            }
+            
+        } else if collectionView.tag == 1 {
+            let data = movieUpcomingData[indexPath.item]
+            print("셀 =================\(data)")
+            if let url = data.poster_path {
+                let image = URL(string: "\(MovieAPIManager.shared.imageURL)\(url)")
+                cell.cardView.posterImageView.kf.setImage(with: image)
+            }
+            
+        } else if collectionView.tag == 2 {
+            let data = tvPopularData[indexPath.item]
+            if let url = data.poster_path {
+                let image = URL(string: "\(MovieAPIManager.shared.imageURL)\(url)")
+                cell.cardView.posterImageView.kf.setImage(with: image)
+            }
+        } else if collectionView.tag == 3 {
+            let data = tvOnScreenData[indexPath.item]
+            if let url = data.poster_path {
+                let image = URL(string: "\(MovieAPIManager.shared.imageURL)\(url)")
+                cell.cardView.posterImageView.kf.setImage(with: image)
+            }
+        }
+        cell.cardView.posterImageView.contentMode = .scaleToFill
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if collectionView.tag == 0 {
+            
+        }
+        
+        
     }
     
 //    func collectionViewLayout() {
@@ -179,6 +237,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.identifier, for: indexPath) as? MainTableViewCell else { return UITableViewCell() }
         cell.contentCollectionView.delegate = self
         cell.contentCollectionView.dataSource = self
@@ -186,6 +245,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         cell.contentCollectionView.register(UINib(nibName: CardCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CardCollectionViewCell.identifier)
         
         cell.contentCollectionView.tag = indexPath.section
+        cell.contentsSortLabel.textColor = .white
+        cell.contentsSortLabel.font = .boldSystemFont(ofSize: 23)
         
         if indexPath.section == 0 {
             cell.contentsSortLabel.text = "인기영화"
@@ -206,7 +267,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 180
+        return 230
     }
     
 }
